@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormTest</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="form_button">
+    <form>
+        <button id="main_button">Показать форму</button>
+    </form>
+</div>
+<div id="popup_form">
+    <div id="popup_top">
+        <h3>Заказать звонок</h3>
+        <span id="close_button">X</span>
+    </div>
+    <div id="popup_bot">
+    <input type="text" class="form-control" id="fio" placeholder="ФИО*">
+    <input type="tel" class="form-control" id="mobile_number" placeholder="Телефон*">
+    <input type="email" class="form-control" id="email" placeholder="Email*">
+    <button id="submit_btn">Заказать звонок</button>
+    </div>
+</div>
+<div id="popup_form_yes">
+    <div id="popup_yes_top">
+        <h3>Отлично!</h3>
+    </div>
+    <div>
+        <p>Вы правильно указали тему <br> обращения</p>
+    </div>
+</div>
+<div id="popup_form_fail">
+    <div id="popup_fail_top">
+        <h3>Ошибка!</h3>
+    </div>
+    <div>
+        <p id="fail_Message"></p>
+    </div>
+</div>
+<div id="blackout"></div>
+<script src="app.js"></script>
+</body>
+</html>
